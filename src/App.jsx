@@ -34,7 +34,7 @@ const App = () => {
       <h1 className="text-4xl font-bold mb-20">Let's flip a coin</h1>
       <Coin animating={animating} site={site} />
       <Button flipCoin={flipCoin} />
-      <p className="font-bold text-2xl text-center">Out of {flipCount} flips, there have been {headCount} {headCount !== 1 ? "heads" : "head" } and {tailCount} {tailCount !== 1 ? "tails" : "tail"}</p>
+      <p className="font-bold text-2xl text-center">Out of {flipCount} {flipCount !== 1 ? "flips" : "flip"}, there have been {headCount} {headCount !== 1 ? "heads" : "head" } and {tailCount} {tailCount !== 1 ? "tails" : "tail"}</p>
     </main>
   )
 }
